@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+  <title>Akhil Emmanuel Media</title>
+  <link rel="stylesheet"  href="mainstyle.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="/logos/favicon.png">
+
+
+</head>
+
+<body>
+
+
+
+
+ <a href="/index.html" title="Home"> <h1>AKHIL EMMANUEL MEDIA PORTFOLIO</h1> </a>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button> 
+  
+  
+  
+
+
+
+<br>
+
+<table class="header"> 
+  <tr class="rowreverse" >
+    <td class="headerdata">   <a class="button" href="/index.html" title="Home">Home</a> </td>
+
+    <td class="headerdata">   <a class="button" href="/infiniteflight.html" title="Infinite Flight Films">Infinite Flight Films</a> </td>
+
+    <td class="headerdata">   <a class="button" href="/irl.html" title="Other Films">Other Films</a> </td>
+
+    <td class="headerdata">   <a class="button" href="/pictures.html" title="Edited Photos">Edited Photos</a> </td>
+  </tr>
+</table>
+
+
+
+
+<div class="bestwork" width="200%">
+<h3 class="BestWorksHeader">BEST WORKS</h3>
+
+<div class="slideshow-container">
+
+
+<!-- SLIDESHOW -->
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <iframe width="100%" height="500"  src="https://www.youtube.com/embed/AoFC3YZqZ8A?c?autoplay=0&fs=1&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&modestbranding=1&autohide=1&controls=1" allowFullScreen="true" > </iframe>
+  </div>
+
+  <div class="mySlides fade">
+    <iframe width="100%" height="500" src="https://www.youtube.com/embed/OnkaYRO-Pg8?c?autoplay=0&fs=1&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&controls=1&modestbranding=1&" allowFullScreen="true" > </iframe>
+  </div>
+
+  <div class="mySlides fade">
+    <iframe width="100%" height="500" src="https://www.youtube.com/embed/Y2H3-JWqTgM??c?autoplay=0&fs=1&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&controls=1&modestbranding=1&" allowFullScreen="true" > </iframe>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+</div>
+
+
+
+<script>
+  let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<!-- SLIDESHOW -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h3 class="BestWorksHeader"> ABOUT ME</h3>
+<br>
+<p class="aboutMeDescription">
+  My name is Akhil Emmanuel, and I am a senior attending&nbsp<a href="https://www.saintanselms.org/" target="_blank"><em>Saint Anselm's Abbey School</em></a>&nbspin Washington, DC. I am also an aviation enthusiast and licensed private pilot, with over 80 hours and 200 landings in real life and thousands more in various flight simulators.
+</p>
+
+<p class="aboutMeDescription">
+   <a href="https://infiniteflight.com/" target="_blank"><em>Infinite Flight</em></a>&nbspwas the first flight simulator that introduced me to the world of aviation. It's currently the most comprehensive flight simulator experience on mobile devices, allowing pilots to fly in real weather conditions, multiplayer across three servers, global scenery and in 61 realistic aircraft. 
+   Infinite Flight also includes an <em>Expert Server</em> requiring pilots to acquire 50 hours of flight time and 100 landings. I'm part of the official <em>Infinite Flight Air Traffic Controllers (IFATC)</em>, the group of about 500 users allowed to control on the <em>Expert Server</em>. I had to pass both a written and practical test to join the IFATC team.
+</p>
+
+<p class="aboutMeDescription">
+  Additionally, I have a passion for expressing my creativity through filmmaking.  I volunteered at a local county TV station, <a href="https://www.mymcmedia.org" target="_blank"> <em>Montgomery Community Media (MCM)</em></a>, which along with other media classes I took in middle school gave me the skills and knowledge to make proper videos.
+  At MCM I would work behind the scenes in various technical roles, such as the audio board, the teleprompter, the switcher, producer, or the floor director for multiple TV shows. 
+  I also produced a pilot episode of my show, <em>DC Tech Zone</em> where I interviewed a technology entrepreneur who came out of the intelligence, military and defense community to highlight the fact that ex-military and intelligence people are capable of starting successful technology companies. 
+</p>
+
+<p class="aboutMeDescription">
+ Combining my passion for aviation and filmmaking has allowed me to produce some remarkable trailers and flight time lapses for Infinite Flight. Check them out above!
+</p>
+
+
+<p class="aboutMeDescription">
+  I also enjoy computer science and programming and have made most of this website from the ground up. 
+ </p>
+
+<br>
+ <p  style="font-size:.75em" class="aboutMeDescription">
+ <i>Last Updated September 2022</i>
+ </p>
+
+
+
+<br>
+
+
+<h3>
+<a href="https://www.linkedin.com/in/akhil-emmanuel-03285a242/" target="_blank" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-instagram" onclick="alert('Instagram Coming Soon')"></a>
+</h3>
+
+</body>
+
+</html>
