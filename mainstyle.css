@@ -213,20 +213,30 @@ html {
 
 
 .gallery {
-  border-spacing: 2em
+  border-spacing: 2em;
+
   }
 
+.gallerycentered {
+  margin-left: auto;
+  margin-right: auto;
+  border-spacing: 2em;
+  width: 60%;
+}
 
+.gallerymobile{
+  display:none;
+}
 
 .gallerydata{
-  padding: 0.7em;
   background-color: rgb(45, 48, 52);
 	color: rgba(255, 255, 255, .702);
-	border-radius: .5em;
+
 }
 
 
 .gallerydescription {
+
   padding:0.7em;
   text-align: center;
 	color: rgba(255, 255, 255, .702);
@@ -283,7 +293,7 @@ html {
 @media screen and (max-width: 600px) {
    
   h1{
-    color:rgb(158, 14, 14);
+    color:rgb(255, 255, 255);
     font-size: 20px;
     text-align: center;
     font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -356,17 +366,25 @@ html {
   }
 
 
-  .gallery {
-    border-spacing: 10px;
-    }
-  
+
+.gallery {
+  display:none;
+  }
+.gallerycentered {
+  display:none;
+  }
+    
+.gallerymobile{
+  border-spacing: 10px;
+  display:block;
+}
   
   
   .gallerydata{
     padding: .1em;
     background-color: rgb(45, 48, 52);
     color: rgba(255, 255, 255, .702);
-    border-radius: .5em;
+  
     margin-bottom:20px;
 
   }
@@ -381,5 +399,6 @@ html {
     letter-spacing: 1px;
   }
   
+
 
 }
