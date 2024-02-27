@@ -24,8 +24,7 @@ h3 {
 	display: flex;
 	justify-content: center;
   font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-weight:100;
-  letter-spacing: 4px;
+  font-weight:100;  letter-spacing: 4px;
 }
 
 iframe {
@@ -62,7 +61,7 @@ a {
   border-style:solid;
   border-width: .1em;;
   padding: 0.5em; 
-  font-weight: 100;
+  font-weight: lighter;
 	margin-top: 12.25em;
   font-size: 1.2em;
   color:rgb(245, 245, 245);
@@ -74,7 +73,7 @@ a {
 	text-decoration:none;
 
   font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-weight:100;
+  font-weight:lighter;
   letter-spacing: 1.5px;
 
 }
@@ -116,7 +115,7 @@ a {
 	/* border-radius: 10px; Rounded corners */
 	font-size: 20px; /* Increase font size */
   font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-weight:100;
+  font-weight:lighter;
   letter-spacing: 1px;
   transition:color .5s
   }
@@ -148,15 +147,12 @@ a {
 	padding-top: 1.5em;
   padding-bottom: 0em;
 
-
-
-
 }
 
 .aboutMeDescription {
 	color: rgb(255, 255, 255);
   font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-weight:100;
+  font-weight:lighter;
   letter-spacing: 1px;
   margin-left: 5em;
   margin-right: 5em;
@@ -241,7 +237,7 @@ html {
   text-align: center;
 	color: rgba(255, 255, 255, .702);
   font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-weight:100;
+  font-weight:lighter;
   letter-spacing: 1px;
 }
 
@@ -400,5 +396,11 @@ html {
   }
   
 
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
 
 }
