@@ -1,8 +1,8 @@
 body {
-    background-color:rgb(27,29,33) ;
+    background-color:rgb(31, 31, 31) ;
     font-family:futura, monospace, sans-serif;
     scroll-behavior: smooth;
-
+    
 
 }
 
@@ -42,11 +42,13 @@ iframe {
 	display: flex;
 	justify-content: center;
 	white-space: nowrap ;
-  border-spacing: 25px;
+  border-spacing: 10px;
 }
 
 
-
+hr {
+  border: 1px dotted rgb(27,29,33);
+}
 
   
 a {
@@ -58,7 +60,7 @@ a {
 .button {
   background-color: rgb(27,29,33);
   border:rgb(255, 255, 255); 
-  border-style:solid;
+  border-style:none;
   border-width: .1em;;
   padding: 0.5em; 
   font-weight: lighter;
@@ -75,67 +77,17 @@ a {
   font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
   font-weight:lighter;
   letter-spacing: 1.5px;
-
+  text-underline-offset: 6px;
 }
 
 
 .button:hover, .button:active {
-  background-color: rgb(255, 255, 255);
-	color:gray;
-	text-decoration:none;
+  /* background-color: rgb(255, 255, 255); */
+	color:rgb(255, 255, 255);
+	text-decoration:underline;
 }
 
  
-
-
-
-
-
-  
-/* START: BACK TO TOP BUTTON: */
-/* START: BACK TO TOP BUTTON: */
-/* START: BACK TO TOP BUTTON: */
-
-
-#myBtn {
-	display: none; /* Hidden by default */
-	position: fixed; /* Fixed/sticky position */
-	bottom: 30px; /* Place the button at the bottom of the page */
-	right: 40px; /* Place the button 30px from the right */
-	z-index: 99; /* Make sure it does not overlap */
-
-	border: rgba(198, 198, 198, 0.702); /* Remove borders */
-  border-style: solid;
-  border-width: .1em;
-	outline: none; /* Remove outline */
-	background-color: rgba(27,29,33, 1); /* Set a background color */
-	color: rgba(198, 198, 198, 0.702); /* Text color */
-	cursor: pointer; /* Add a mouse pointer on hover */
-	padding: 10px; /* Some padding */
-	/* border-radius: 10px; Rounded corners */
-	font-size: 20px; /* Increase font size */
-  font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-weight:lighter;
-  letter-spacing: 1px;
-  transition:color .5s
-  }
-  
-  #myBtn:hover {
-  border: rgb(255, 255, 255);
-  border-style: solid;
-  border-width: .1em;
-	color: rgb(255, 255, 255); /* Add a dark-grey background on hover */
-  }
-
-  * {box-sizing:border-box}
-
-/* END: BACK TO TOP BUTTON: */
-/* END: BACK TO TOP BUTTON: */
-/* END: BACK TO TOP BUTTON: */
-
-
-
-
 
 
 
@@ -216,8 +168,9 @@ html {
 .gallerycentered {
   margin-left: auto;
   margin-right: auto;
-  border-spacing: 2em;
-  width: 60%;
+  border-spacing: .75em;
+  width: 45%;
+
 }
 
 .gallerymobile{
@@ -225,9 +178,10 @@ html {
 }
 
 .gallerydata{
-  background-color: rgb(45, 48, 52);
-	color: rgba(255, 255, 255, .702);
-
+  /* background-color: rgb(45, 48, 52);
+	color: rgba(255, 255, 255, .702); */
+  background-color: rgb(222, 222, 222);
+	color: rgba(41, 41, 41, 0.702);
 }
 
 
@@ -235,10 +189,11 @@ html {
 
   padding:0.7em;
   text-align: center;
-	color: rgba(255, 255, 255, .702);
+	color: rgb(0, 0, 0);
   font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-weight:lighter;
+  font-weight:heavy;
   letter-spacing: 1px;
+  
 }
 
 
@@ -250,15 +205,18 @@ html {
 /* START: FOR LANDING PAGE AUTO VIDEO PLAYER */
 /* START: FOR LANDING PAGE AUTO VIDEO PLAYER */
 .hightreelcontainer {
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
   overflow: hidden;
   display: block;
 
+
 }
 
 #glass {
-  margin-top: -8%;
-  margin-bottom: -8%;
+  margin-top: -6%;
+  margin-bottom: -8%; 
 }
 /* END: FOR LANDING PAGE AUTO VIDEO PLAYER */
 /* END: FOR LANDING PAGE AUTO VIDEO PLAYER */
@@ -286,7 +244,51 @@ html {
 
 
 
-@media screen and (max-width: 600px) {
+
+.scroll-container-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.scroll-container {
+ 
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.scroll-container img {
+  padding: 7px;
+  background-color: rgb(222, 222, 222);
+  width: 20%; /* Make the image fill its container */
+  max-width: 100%; /* Ensure the image doesn't exceed the width of its parent */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+.text-box {
+  width: 100%;
+  max-width: 300px;
+  color: rgb(33, 33, 33);
+  background-color: rgb(222, 222, 222);
+  padding: 5px;
+  padding-top: 0px;
+  padding-bottom: 2px;
+  overflow-y: auto;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
    
   h1{
     color:rgb(255, 255, 255);
@@ -316,6 +318,7 @@ html {
     font-size: 15px;
     color:rgb(245, 245, 245);
     transition:color, background-color .5s;
+    margin-left:15px
     
   }
 
@@ -401,6 +404,22 @@ html {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+  }
+
+
+  .button:hover, .button:active {
+    background-color: rgb(255, 255, 255); 
+    color:rgb(255, 255, 255);
+    /* text-decoration:underline;*/
+  }
+
+
+  .scroll-container img {
+    width: 90%; /* Shrink the image more on smaller screens */
+  }
+
+  .text-box {
+    width: 100%; /* Make the text box adjust with the image */
   }
 
 }
