@@ -58,7 +58,7 @@ a {
 }
 
 .button {
-  background-color: rgb(27,29,33);
+  background-color: #1f1f1f;
   border:rgb(255, 255, 255); 
   border-style:none;
   border-width: .1em;;
